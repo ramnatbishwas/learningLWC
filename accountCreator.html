@@ -1,0 +1,15 @@
+<template>
+    <lightning-record-form 
+    object-api-name={accountObject} 
+    fields={accountFields} 
+    mode="edit" 
+    onsuccess={handleAccountCreated}>
+    </lightning-record-form>
+    <span class="slds-m-around_small status">{createStatus}</span>
+</template>
+<!-- The lightning-record-form, lightning-record-edit-form, and lightning-record-view-form components 
+     come with event handling via onsubmit, onsuccess, and onerror attributes. 
+     To pass your form data to the container component, create a custom event.import { LightningElement } from 'lwc';
+import ACCOUNT_OBJECT from '@salesforce/schema/Account';
+import NAME_FIELD from '@salesforce/schema/Account.Name';
+import WEBSITE_FIELD from '@salesforce/schema/Account.Website'; -->

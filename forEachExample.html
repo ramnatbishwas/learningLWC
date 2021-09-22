@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title = "For Each Example" icon-name="custom:custom14">
+        <div class="slds-m-left_small">
+    <template for:each={contactList} for:item= "cont">
+         <div key={cont}>{cont}</div>
+    </template>
+       </div>
+</lightning-card>
+    
+</template>
